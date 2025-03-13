@@ -1,0 +1,78 @@
+# Basic info
+name: Youssef Mikhail
+phone: 123-456-7890
+email: email@example.com
+linkedin: https://linkedin.com/in/youssef-mikhail
+github: https://github.com/ruler225
+
+education:
+  school: McMaster University
+  degree: Bachelor of Applied Science in Computer Science, Minor in Business
+  location: Hamilton, ON, Canada
+  bullet_points:
+    - Achieved GPA of 3.9/4.0
+  
+work_experience:
+  - company: Sun Life Financial
+    title: Security Platform Analyst
+    dates: June 2024 - Present
+    location: Toronto, ON, Canada
+    bullet_points:
+      - Leveraged various security platforms, such as Crowdstrike, Akamai, Netskope, and more to respond to and investigate security threats
+      - Supported security tool management and operationalized new security technologies into production
+      - Collaborated with security teams to ensure protection mechanisms and controls are optimized to mitigate risks
+  
+  - company: Neuralink
+    title: Software Engineer - Infrastructure
+    dates: July 2023 - November 2023
+    location: Fremont, CA, United States
+    bullet_points:
+      - Collaborated with cross-disciplinary teams to expedite the path to first human surgery, reliably delivering key projects in a dynamic and fast-paced environment
+      - Designed and maintained CI/CD infrastructure for multiple GitLab repositories, enhancing pipeline efficiency
+      - Developed and rewrote backend systems for Neuralink’s Patient Registry using AWS services (Lambda, RDS, ECS) to greatly improve workflow efficiency, cutting time needed to perform routine tasks in half
+      - Leveraged tools such as Prometheus, Grafana, AWS CloudWatch and more to monitor and measure application errors, reducing user issues by roughly 80%
+      - Managed company-wide infrastructure deployment on Kubernetes
+
+  - company: AMD
+    title: Software Engineer - Developer Tools
+    dates: May 2021 - August 2022
+    location: Markham, ON, Canada
+    bullet_points:
+      - Developed CI/CD automated testing solutions for graphics tools to increase testing efficiency
+      - Created automated regression testing frameworks to eliminate 60% of manual testing
+      - Debugged and analyzed various DirectX12 applications and games
+      - Worked as an active developer for several internal graphical API analysis tools written in C++
+      - Participated in the development of Compressonator, an open-source texture compression framework used by various game developers
+      - Managed user requests and bug reports, ensuring timely resolution and support
+
+
+
+personal_projects:
+  - name: iOS Jailbreak Tweaks
+    technologies: [ Objective-C, iOS, Reverse-engineering ]
+    duration: 1 year
+    bullet_points:
+      - Developed and maintained several jailbreak tweaks adding functionality to iOS with over 100,000 downloads
+      - Reverse-engineered iOS binaries and frameworks, identifying and modifying target subroutines
+      - Managed a Debian repository on GitHub pages, providing regular updates and bug fixes based on community feedback
+  - name: Undergraduate Capstone Project - QTime
+    technologies: [ Python, Rest APIs, Flask, Firebase, AWS ]
+    duration: 1 year
+    bullet_points:
+      - Led a team of five in developing a cross-platform mobile app to predict campus wait times using crowdsourced data
+      - Utilized anonymized GPS data from mobile devices to estimate wait times for locations across McMaster’s campus
+      - Designed and implemented backend infrastructure using Flask, Firebase, and AWS
+      - Developed automated testing and deployment infrastructure and deployed using Docker
+      - Documented requirements and system design
+  - name: Online Multiplayer Battleship Game
+    technologies: [ Python, Django, Elm ]
+    duration: 8 months
+    bullet_points:
+      - Created a full-stack real-time multiplayer battleship game leveraging Elm and Django
+      - Used Django’s relational database models to keep track of active sessions and users
+
+
+technical_skills:
+  languages: [ Python, C/C++, Java, JavaScript, SQL (Postgres), YAML, Objective-C, Haskell, x86 Assembly ]
+  frameworks: [ Amazon Web Services (AWS), Node.js, Flask, Kubernetes, Firebase, FastAPI ]
+  developer_tools: [ Git, Docker, Bash, Jenkins, GitLab/GitHub CI Pipelines ]
