@@ -32,6 +32,7 @@
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
 
+(% raw %)
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -102,6 +103,8 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+(% endraw %)
+
 
 \begin{document}
 
@@ -112,10 +115,10 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge \scshape {{ name }}} \\ \vspace{1pt}
-    \small {{phone}} $|$ \href{mailto:{{ email }}}{\underline{{{ email }}}} $|$ 
-    \href{https://{{ linkedin }}}{\underline{{{ linkedin }}}} $|$
-    \href{https://{{ github }}}{\underline{{{ github }}}}
+    \textbf{\Huge \scshape (( name ))} \\ \vspace{1pt}
+    \small (( phone )) $|$ \href{mailto:(( email ))}{\underline{(( email ))}} $|$ 
+    \href{https://(( linkedin ))}{\underline{(( linkedin ))}} $|$
+    \href{https://(( github ))}{\underline{(( github ))}}
 \end{center}
 
 
@@ -123,12 +126,12 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {{{ education.school }}}{{{ education.location }}}
-      {{{ education.degree }}}{}
+      {(( education.school ))}{(( education.location ))}
+      {(( education.degree ))}{}
       \resumeItemListStart
-      {% for item in education.bullet_points %}
-      	\resumeItem{{{ item }}} 
-      {% endfor %}
+      (% for item in education.bullet_points %)
+      	\resumeItem{(( item ))} 
+      (% endfor %)
       \resumeItemListEnd
    \resumeSubHeadingListEnd
 
@@ -136,17 +139,17 @@
 %-----------EXPERIENCE-----------
 \section{Work Experience}
   \resumeSubHeadingListStart
-    {% for position in work_experience %}
+    (% for position in work_experience %)
 
     \resumeSubheading
-      { {{ position.company }}  $|$ {{ position.title }}}{{{ position.dates }}}
-      {{{ position.location }}}{}
+      { (( position.company ))  $|$ (( position.title ))}{(( position.dates ))}
+      {(( position.location ))}{}
       \resumeItemListStart
-      {% for item in position.bullet_points }
-        \resumeItem{{{ item }}}
-      {% endfor %}
+      (% for item in position.bullet_points %)
+        \resumeItem{(( item ))}
+      (% endfor %)
       \resumeItemListEnd
-    {% endfor %}
+    (% endfor %)
       
 % -----------Multiple Positions Heading-----------
 %    \resumeSubSubheading
@@ -163,15 +166,15 @@
 %-----------PROJECTS-----------
 \section{Highlighted Personal Projects}
     \resumeSubHeadingListStart
-    {% for project in personal_projects %}
+    (% for project in personal_projects %)
       \resumeProjectHeading
-          {\textbf{{{ project.name }}} $|$ \emph{{{ project.technologies|join(', ')}} }}{{{ project.duration }}}
+          {\textbf{(( project.name ))} $|$ \emph{(( project.technologies|join(', ') ))}{(( project.duration ))}
           \resumeItemListStart
-            {% for item in project.bullet_points %}
-            \resumeItem{{{ item }}}
-            {% endfor %}
+            (% for item in project.bullet_points %)
+            \resumeItem{(( item ))}
+            (% endfor %)
           \resumeItemListEnd
-    {% endfor %}
+    (% endfor %)
     \resumeSubHeadingListEnd
 
 
@@ -181,9 +184,9 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: {{ technical_skills.languages|join(', ') }}} \\
-     \textbf{Frameworks}{: {{ technical_skills.frameworks|join(', ') }}} \\
-     \textbf{Developer Tools}{: {{ technical_skills.developer_tools|join(', ') }}} \\
+     \textbf{Languages}{: (( technical_skills.languages|join(', ') ))} \\
+     \textbf{Frameworks}{: (( technical_skills.frameworks|join(', ') ))} \\
+     \textbf{Developer Tools}{: (( technical_skills.developer_tools|join(', ') ))} \\
     }}
  \end{itemize}
 
