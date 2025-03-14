@@ -3,6 +3,7 @@ import jinja2
 import os
 
 from config import *
+from util import escape_latex
 
 ## Load YAML file with resume content
 resume_data = {}
@@ -19,7 +20,8 @@ jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader(RESUME_TEMPLATE_DI
                                block_start_string='(%',
                                block_end_string='%)',
                                variable_start_string='((',
-                               variable_end_string='))')
+                               variable_end_string='))',
+                               finalize=escape_latex)
 template = jinja_env.get_template(RESUME_TEMPLATE_FILE_NAME)
 
 ## TODO: Load/take as input job description

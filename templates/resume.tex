@@ -168,7 +168,7 @@
     \resumeSubHeadingListStart
     (% for project in personal_projects %)
       \resumeProjectHeading
-          {\textbf{(( project.name ))} $|$ \emph{(( project.technologies|join(', ') ))}{(( project.duration ))}
+          {\textbf{(( project.name ))} $|$ \emph{(( project.technologies|join(', ') ))}}{(( project.duration ))}
           \resumeItemListStart
             (% for item in project.bullet_points %)
             \resumeItem{(( item ))}
