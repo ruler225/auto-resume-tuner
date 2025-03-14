@@ -27,7 +27,13 @@ jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader(RESUME_TEMPLATE_DI
 template = jinja_env.get_template(RESUME_TEMPLATE_FILE_NAME)
 print(f"Loaded LaTeX template at {RESUME_TEMPLATE_FILE_NAME}")
 
-## TODO: Load/take as input job description
+## Load/take as input job description
+
+job_posting = ""
+with open(JOB_POSTING_FILE, 'r') as job_file:
+    job_posting = job_file.read()
+if not job_posting:
+    print("Warning: job posting file is empty")
 
 
 ## TODO: Establish connections to ollama model

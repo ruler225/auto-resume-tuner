@@ -1,0 +1,74 @@
+DevOps Engineer
+
+Hybrid Position - Minneapolis or Toronto only!
+
+The DevOps Enablement Team at Thomson Reuters is responsible for delivering comprehensive DevOps solutions to the company's technology teams.
+
+
+As a DevOps Engineer, you will play a crucial role in advancing infrastructure and processes with a focus on automation, reliability, and efficiency.
+
+This involves working closely with development and operations teams to architect, implement, and maintain scalable and resilient systems, leveraging the latest in cloud technologies and DevOps practices.
+
+About the Role:
+
+In this opportunity, as a DevOps Engineer, you will:
+
+Turn new requirements into code, including unit testing, deployment, and ongoing monitoring.
+
+Work with team members through practices and tools enablement including a focus on automation and defining new ways of working, along with a modern development toolset.
+
+Partner with delivery teams through a DevOps transformation of the product lifecycle from requirements definition, through development, and operations.
+
+ Collaborate with peers to identify priorities for enablement measured by an increase in developer efficiency.
+
+Drive innovation with a willingness to explore and learn AI technologies, applying them to enhance DevOps solutions and processes.
+
+About You:
+
+This role is designed for individuals who are passionate about leveraging cutting-edge technologies to drive efficiency and innovation within our DevOps & Cloud automation practices.
+
+If you have a proactive mindset, a passion for learning, and a desire to work in a dynamic, collaborative environment, we encourage you to apply.
+
+Here are the skillsets required:
+
+1-2 years of experience with public cloud (AWS, Azure) and strong Automation experience with Python, Bash, PowerShell etc - Must have
+
+Understand and build automated tests to fit into the bigger picture of software delivery for building CI/CD pipelines, optimizing the execution of tests, and ensuring that the tests are regularly providing fast and reliable feedback.
+
+Demonstrated proficiency in utilizing public cloud platforms (AWS/Azure/OCI)
+
+ Experience with Generative AI, AI assisted Developer tools like GitHub CoPilot, AWS Code Whisperer etc.
+
+#LI-LP2
+
+What’s in it For You?
+
+Join us to inform the way forward with the latest AI solutions and address real-world challenges in legal, tax, compliance, and news. Backed by our commitment to continuous learning and market-leading benefits, you’ll be prepared to grow, lead, and thrive in an AI-enabled future. This includes:
+
+Industry-Leading Benefits: We offer comprehensive benefit plans to include flexible vacation, two company-wide Mental Health Days off, access to the Headspace app, retirement savings, tuition reimbursement, employee incentive programs, and resources for mental, physical, and financial wellbeing.
+
+Flexibility & Work-Life Balance: Flex My Way is a set of supportive workplace policies designed to help manage personal and professional responsibilities, whether caring for family, giving back to the community, or finding time to refresh and reset. This builds upon our flexible work arrangements, including work from anywhere for up to 8 weeks per year, and hybrid model, empowering employees to achieve a better work-life balance.
+
+Career Development and Growth: By fostering a culture of continuous learning and skill development, we prepare our talent to tackle tomorrow’s challenges and deliver real-world solutions. Our skills-first approach ensures you have the tools and knowledge to grow, lead, and thrive in an AI-enabled future.
+
+Culture: Globally recognized and award-winning reputation for inclusion, innovation, and customer-focus. Our eleven business resource groups nurture our culture of belonging across the diverse backgrounds and experiences represented across our global footprint.
+
+Hybrid Work Model: We’ve adopted a flexible hybrid working environment (2-3 days a week in the office depending on the role) for our office-based roles while delivering a seamless experience that is digitally and physically connected.
+
+Social Impact: Make an impact in your community with our Social Impact Institute. We offer employees two paid volunteer days off annually and opportunities to get involved with pro-bono consulting projects and Environmental, Social, and Governance (ESG) initiatives.
+
+In the United States, Thomson Reuters offers a comprehensive benefits package to our employees. Our benefit package includes market competitive health, dental, vision, disability, and life insurance programs, as well as a competitive 401k plan with company match. In addition, Thomson Reuters offers market leading work life benefits with competitive vacation, sick and safe paid time off, paid holidays (including two company mental health days off), parental leave, sabbatical leave. These benefits meet or exceeds the requirements of paid time off in accordance with any applicable state or municipal laws. Finally, Thomson Reuters offers the following additional benefits: optional hospital, accident and sickness insurance paid 100% by the employee; optional life and AD&D insurance paid 100% by the employee; Flexible Spending and Health Savings Accounts; fitness reimbursement; access to Employee Assistance Program; Group Legal Identity Theft Protection benefit paid 100% by employee; access to 529 Plan; commuter benefits; Adoption & Surrogacy Assistance; Tuition Reimbursement; and access to Employee Stock Purchase Plan.
+Thomson Reuters complies with local laws that require upfront disclosure of the expected pay range for a position. The base compensation range varies across locations.
+For any eligible US locations, unless otherwise noted, the base compensation range for this role is $70,000 - $130,000.
+This role may also be eligible for an Annual Bonus based on a combination of enterprise and individual performance.
+Base pay is positioned within the range based on several factors including an individual’s knowledge, skills and experience with consideration given to internal equity. Base pay is one part of a comprehensive Total Reward program which also includes flexible and supportive benefits and other wellbeing programs.
+
+Do you want to be part of a team helping re-invent the way knowledge professionals work? How about a team that works every day to create a more transparent, just and inclusive future? At Thomson Reuters, we’ve been doing just that for almost 160 years. Our industry-leading products and services include highly specialized information-enabled software and tools for legal, tax, accounting and compliance professionals combined with the world’s most global news services – Reuters. We help these professionals do their jobs better, creating more time for them to focus on the things that matter most: advising, advocating, negotiating, governing and informing.
+
+We are powered by the talents of 26,000 employees across more than 70 countries, where everyone has a chance to contribute and grow professionally in flexible work environments that celebrate diversity and inclusion. At a time when objectivity, accuracy, fairness and transparency are under attack, we consider it our duty to pursue them. Sound exciting? Join us and help shape the industries that move society forward. 
+
+Accessibility 
+
+As a global business, we rely on diversity of culture and thought to deliver on our goals. To ensure we can do that, we seek talented, qualified employees in all our operations around the world regardless of race, color, sex/gender, including pregnancy, gender identity and expression, national origin, religion, sexual orientation, disability, age, marital status, citizen status, veteran status, or any other protected classification under applicable law. Thomson Reuters is proud to be an Equal Employment Opportunity/Affirmative Action Employer providing a drug-free workplace.
+
+We also make reasonable accommodations for qualified individuals with disabilities and for sincerely held religious beliefs in accordance with applicable law.
