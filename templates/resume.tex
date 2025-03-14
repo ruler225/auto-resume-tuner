@@ -142,10 +142,10 @@
     (% for position in work_experience %)
 
     \resumeSubheading
-      { (( position.company ))  $|$ (( position.title ))}{(( position.dates ))}
+      {(( position.company ))  $|$ (( position.title ))}{(( position.dates ))}
       {(( position.location ))}{}
       \resumeItemListStart
-      (% for item in position.bullet_points %)
+      (% for item in position.bullet_points -%)
         \resumeItem{(( item ))}
       (% endfor %)
       \resumeItemListEnd
@@ -170,7 +170,7 @@
       \resumeProjectHeading
           {\textbf{(( project.name ))} $|$ \emph{(( project.technologies|join(', ') ))}}{(( project.duration ))}
           \resumeItemListStart
-            (% for item in project.bullet_points %)
+            (% for item in project.bullet_points -%)
             \resumeItem{(( item ))}
             (% endfor %)
           \resumeItemListEnd
