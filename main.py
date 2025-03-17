@@ -5,6 +5,7 @@ from pdflatex import PDFLaTeX
 
 from config import *
 from util import escape_latex
+from llm_utils import rewrite_resume_data
 
 ## Load YAML file with resume content
 resume_data = {}
@@ -42,9 +43,12 @@ if not job_posting:
 
 ## TODO: Substitute LLM responses in YAML data
 
+new_resume_data = rewrite_resume_data(resume_data, job_posting)
+
+
 
 ## Render LaTeX file
-rendered_latex = template.render(resume_data)
+rendered_latex = template.render(new_resume_data)
 generated_latex_path = os.path.join(OUTPUT_DIR, "output.tex")
 if not os.path.exists(OUTPUT_DIR):
     os.makedirs(OUTPUT_DIR)
