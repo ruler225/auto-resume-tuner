@@ -1,8 +1,8 @@
 import yaml
 import jinja2
 import os
-from pdflatex import PDFLaTeX
-
+import subprocess
+# TODO: clean up pdflatex dependency as it is ass
 from config import *
 from util import escape_latex
 from llm_utils import rewrite_resume_data
@@ -58,8 +58,26 @@ print(f"Wrote generated LaTeX file to {generated_latex_path}")
 
 ## Generate PDF
 print("Generating final PDF file...")
-destination_pdf_path = os.path.join(OUTPUT_DIR, "output.pdf")
-pdfl = PDFLaTeX.from_texfile(generated_latex_path)
-pdfl.set_output_directory(OUTPUT_DIR)
-pdfl.create_pdf(keep_pdf_file=True, keep_log_file=True)
-print(f"Done! PDF file created at {destination_pdf_path}")
+
+command = [
+    "pdflatex",
+    "-interaction=nonstopmode",
+    "-output-directory", OUTPUT_DIR,
+    generated_latex_path
+]
+
+result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+if result.returncode != 0:
+    print("LaTeX compilation failed!")
+    print(result.stdout.decode())
+    print(result.stderr.decode())
+    raise RuntimeError("pdflatex failed")
+
+print("LaTeX compilation succeeded!")
+print(f"PDF file generated successfully")
+# Clean up temporary files
+junk_files = [os.path.join(OUTPUT_DIR, f"output.{extension}") for extension in ["aux", "log", "out"]]
+for file in junk_files:
+    os.remove(file)
+print("Done!")
