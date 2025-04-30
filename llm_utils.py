@@ -52,16 +52,16 @@ def rewrite_resume_data(resume_data: dict[str, Any], job_posting: str) -> dict[s
 
     # TODO: implementation
 
-    llm = OllamaLLM(model=LLM_MODEL)
+    llm = OllamaLLM(model=LLM_MODEL, base_url="http://mikhailhome.asuscomm.com:11434")
 
     # Set up prompt
 
     template = ChatPromptTemplate([
         ("system", system_prompt),
         ("user", "Job posting:\n{job_posting}"),
-        #("user", system_prompt),
+        ("user", system_prompt),
         ("user", "Resume data:\n```{resume_data}```"),
-        #("user", system_prompt)
+        ("user", system_prompt)
     ])
     yaml_resume_data = yaml.dump(resume_data)
     messages = template.format_messages(job_posting=job_posting, resume_data=yaml_resume_data)
