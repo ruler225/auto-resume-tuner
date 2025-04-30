@@ -54,6 +54,7 @@ def rewrite_resume_data(resume_data: dict[str, Any], job_posting: str) -> dict[s
 
     llm = OllamaLLM(model=LLM_MODEL, base_url="http://mikhailhome.asuscomm.com:11434")
 
+
     # Set up prompt
 
     template = ChatPromptTemplate([
