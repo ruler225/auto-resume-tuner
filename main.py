@@ -2,7 +2,6 @@ import yaml
 import jinja2
 import os
 import subprocess
-# TODO: clean up pdflatex dependency as it is ass
 from config import *
 from util import escape_latex
 from llm_utils import rewrite_resume_data
