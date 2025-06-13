@@ -1,10 +1,10 @@
 import yaml
 import jinja2
 import os
-from pdflatex import PDFLaTeX
-
+import subprocess
 from config import *
 from util import escape_latex
+from llm_utils import rewrite_resume_data
 
 ## Load YAML file with resume content
 resume_data = {}
@@ -42,9 +42,12 @@ if not job_posting:
 
 ## TODO: Substitute LLM responses in YAML data
 
+new_resume_data = rewrite_resume_data(resume_data, job_posting)
+
+
 
 ## Render LaTeX file
-rendered_latex = template.render(resume_data)
+rendered_latex = template.render(new_resume_data)
 generated_latex_path = os.path.join(OUTPUT_DIR, "output.tex")
 if not os.path.exists(OUTPUT_DIR):
     os.makedirs(OUTPUT_DIR)
@@ -54,8 +57,26 @@ print(f"Wrote generated LaTeX file to {generated_latex_path}")
 
 ## Generate PDF
 print("Generating final PDF file...")
-destination_pdf_path = os.path.join(OUTPUT_DIR, "output.pdf")
-pdfl = PDFLaTeX.from_texfile(generated_latex_path)
-pdfl.set_output_directory(OUTPUT_DIR)
-pdfl.create_pdf(keep_pdf_file=True, keep_log_file=True)
-print(f"Done! PDF file created at {destination_pdf_path}")
+
+command = [
+    "pdflatex",
+    "-interaction=nonstopmode",
+    "-output-directory", OUTPUT_DIR,
+    generated_latex_path
+]
+
+result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+if result.returncode != 0:
+    print("LaTeX compilation failed!")
+    print(result.stdout.decode())
+    print(result.stderr.decode())
+    raise RuntimeError("pdflatex failed")
+
+print("LaTeX compilation succeeded!")
+print(f"PDF file generated successfully")
+# Clean up temporary files
+junk_files = [os.path.join(OUTPUT_DIR, f"output.{extension}") for extension in ["aux", "log", "out"]]
+for file in junk_files:
+    os.remove(file)
+print("Done!")
