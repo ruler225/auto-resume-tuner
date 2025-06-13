@@ -19,6 +19,12 @@ At the beginning of any session in your command line, you will need to activate 
 $ source env/Scripts/activate
 ```
 
+Or if you are using PowerShell, like a pleb, you can run this:
+
+```
+> .\env\Scripts\activate
+```
+
 ### Installing Required Python Packages
 
 All the necessary Python packages are stored in `requirements.txt`. To install all the requirements, simply run:
